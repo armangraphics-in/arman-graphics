@@ -18,15 +18,15 @@ const BUSINESS = {
     name: "Arman Graphics",
     tagline: "Your One-Stop Printing & Branding Solution",
     // ✏️ Replace with your WhatsApp number (country code + number, no + sign)
-    phone: "919876543210",
-    email: "armangraphics@gmail.com",
-    address: "Main Market, Ambedkar Nagar, Uttar Pradesh, India - 224122",
+    phone: "916388025941",
+    email: "armangraphics.in@gmail.com",
+    address: "Tanda, Ambedkar Nagar, Uttar Pradesh, India - 224190",
     location: "Ambedkar Nagar, UP",
     mapLink: "https://maps.google.com/?q=Ambedkar+Nagar+Uttar+Pradesh+India",
     // ✏️ Replace with your social media links
-    instagram: "https://instagram.com/armangraphics",
-    facebook: "https://facebook.com/armangraphics",
-    youtube: "https://youtube.com/@armangraphics"
+    instagram: "https://instagram.com/armangraphics.in",
+    facebook: "https://www.facebook.com/armangraphics.in",
+    youtube: "https://youtube.com/@armangraphics_in"
 };
 
 // ============================================
