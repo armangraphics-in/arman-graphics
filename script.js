@@ -392,6 +392,14 @@ document.addEventListener('DOMContentLoaded', function() {
 // 📱 WHATSAPP FUNCTION - WhatsApp message open karo
 // ================================================================
 function openWhatsApp(message) {
+
+    // 🔥 Google Analytics Event (IMPORTANT)
+    gtag('event', 'whatsapp_click', {
+        event_category: 'contact',
+        event_label: 'whatsapp_button'
+    });
+
+    // WhatsApp open
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
 }
