@@ -1,376 +1,367 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi-en">
 <head>
-    <!-- ============================================
-         ARMAN GRAPHICS - Printing & Branding Website
-         CMYK Theme (Cyan, Magenta, Yellow, Black)
-         
-         ✏️ HOW TO EDIT:
-         - Business name: Search & replace "Arman Graphics"
-         - Phone/WhatsApp: Edit BUSINESS object in script.js
-         - Colors: Edit CSS variables in style.css
-         - Products: Use admin.html or edit script.js
-         - Logo: Replace logo.png with your own logo
-         ============================================ -->
-    
+    <!-- ========== SEO META TAGS ========== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ✏️ SEO Meta Tags - Edit these for your business -->
-    <title>Arman Graphics | Best Printing & Branding Services in Ambedkar Nagar</title>
-    <meta name="description" content="Arman Graphics - Premium printing & branding services in Ambedkar Nagar, UP. Visiting cards, banners, wedding cards, stickers, ID cards & more.">
-    <meta name="keywords" content="printing services, visiting cards, banners, wedding cards, stickers, branding, Ambedkar Nagar, Uttar Pradesh, Arman Graphics">
+    <title>Arman Graphics | Best Printing & Branding Services in Ambedkar Nagar, UP</title>
+    <meta name="description" content="Arman Graphics - Premium printing & branding services in Ambedkar Nagar, Uttar Pradesh. Visiting cards, banners, wedding cards, t-shirt printing & more. Fast delivery, best prices!">
+    <meta name="keywords" content="printing services ambedkar nagar, visiting card printing, banner printing, wedding card, branding, arman graphics, flex printing UP">
     <meta name="author" content="Arman Graphics">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Arman Graphics | Printing & Branding Services">
-    <meta property="og:description" content="Premium printing & branding services in Ambedkar Nagar.">
+    <meta property="og:description" content="Premium printing & branding in Ambedkar Nagar. Quality printing at best prices!">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_IN">
-    
-    <!-- Fonts -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="style.css">
 
-    <link rel="icon" sizes="32x32" href="images/arman-logo.png">
-<link rel="apple-touch-icon" sizes="180x180" href="images/arman-logo.png">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- 🎨 Main Stylesheet - Saari styling yahan hai -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ======== CMYK COLOR BAR (Top of page) ======== -->
-    <!-- ✏️ This creates the Cyan-Magenta-Yellow-Black bar at the very top -->
-    <div class="cmyk-bar"></div>
-
-    <!-- ======== LOADING SCREEN ======== -->
+    <!-- ================================================================
+         LOADING SCREEN - Page load hone tak dikhega
+    ================================================================ -->
     <div class="loader" id="loader">
         <div class="loader-spinner"></div>
-        <div class="loader-text">Arman Graphics</div>
     </div>
 
-    <!-- ======== HEADER / NAVIGATION ======== -->
-    <header class="header" id="header">
+    <!-- ================================================================
+         NAVBAR - Sticky Navigation Bar
+    ================================================================ -->
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <nav class="nav">
-                <!-- ✏️ LOGO: Replace logo.png with your own logo file -->
-                <!-- Place your logo image in the same folder as index.html -->
-                <a href="#" class="logo">
-                    <img 
-                        src="logo.png" 
-                        alt="Arman Graphics Logo" 
-                        class="logo-img"
-                        onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
-                    >
-                    <!-- Fallback text logo (shows if logo.png not found) -->
-                    <span class="logo-fallback">Arman<span>Graphics</span></span>
-                </a>
-                
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#why-us">Why Us</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#testimonials">Reviews</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact" class="nav-cta">Get Quote</a></li>
-                </ul>
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">A</div>
+                <div class="logo-text">
+                    Arman Graphics
+                    <small>Print & Brand Studio</small>
+                </div>
+            </a>
 
-                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
+            <!-- Navigation Links -->
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Gallery</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+                <a href="#enquiry" class="nav-cta">Get Quote</a>
+            </div>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Mobile overlay -->
+    <!-- Mobile Overlay -->
     <div class="mobile-overlay" id="mobileOverlay"></div>
 
-    <!-- ======== HERO SECTION ======== -->
+    <!-- ================================================================
+         HERO SECTION - Main Slider
+         ✏️ Slides ka content script.js mein 'heroSlides' array mein change karo
+    ================================================================ -->
     <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <!-- ✏️ Edit hero badge text -->
+        <div class="hero-slider" id="heroSlider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <div class="hero-slide-bg"></div>
+                <div class="hero-overlay"></div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="hero-slide-bg"></div>
+                <div class="hero-overlay"></div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <div class="hero-slide-bg"></div>
+                <div class="hero-overlay"></div>
+            </div>
+        </div>
+
+        <!-- Animated Shapes -->
+        <div class="hero-shapes">
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="container">
                 <div class="hero-badge">
-                    <i class="fa-solid fa-location-dot"></i>
-                    Ambedkar Nagar, Uttar Pradesh
+                    <i class="fas fa-star"></i>
+                    Ambedkar Nagar's #1 Printing Studio
                 </div>
-
-                <!-- ✏️ Edit main heading -->
-                <h1>
-                    Premium <span class="gradient-text">Printing & Branding</span> Solutions For Your Business
-                </h1>
-
-                <!-- ✏️ Edit sub-heading -->
-                <p>
-                    From visiting cards to wedding invitations — we deliver stunning print quality at unbeatable prices. Trusted by 500+ businesses in Ambedkar Nagar.
-                </p>
-
-                <!-- CTA Buttons -->
+                <h1 id="heroTitle">Premium <span class="highlight">Printing</span> & Branding Solutions</h1>
+                <p class="hero-text" id="heroText">Visiting cards se lekar banners tak, wedding cards se custom designs tak — har printing need ke liye ek hi naam, Arman Graphics!</p>
                 <div class="hero-buttons">
-                    <button class="btn btn-whatsapp" onclick="openWhatsApp()">
-                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
-                    </button>
-                    <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
-                        <i class="fa-solid fa-grid-2"></i> View Services
-                    </button>
-                    <button class="btn btn-outline" onclick="callBusiness()">
-                        <i class="fa-solid fa-phone"></i> Call Now
-                    </button>
+                    <a href="#enquiry" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get Free Quote
+                    </a>
+                    <a href="#" class="btn btn-whatsapp" id="heroWhatsappBtn" onclick="openWhatsApp('Hello Arman Graphics, I want to know about your printing services.'); return false;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                    <a href="#services" class="btn btn-outline">
+                        <i class="fas fa-th-large"></i> Our Services
+                    </a>
                 </div>
-
-                <!-- Stats -->
                 <div class="hero-stats">
                     <div class="hero-stat">
-                        <div class="number">500+</div>
-                        <div class="label">Happy Clients</div>
+                        <div class="hero-stat-number" data-count="5000">0</div>
+                        <div class="hero-stat-label">Happy Customers</div>
                     </div>
                     <div class="hero-stat">
+                        <div class="hero-stat-number" data-count="12">0</div>
+                        <div class="hero-stat-label">Services</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number" data-count="10">0</div>
+                        <div class="hero-stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Dots -->
+        <div class="slider-dots" id="sliderDots">
+            <div class="slider-dot active" data-slide="0"></div>
+            <div class="slider-dot" data-slide="1"></div>
+            <div class="slider-dot" data-slide="2"></div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         TRUST BADGES - Bharosa dikhane ke liye
+    ================================================================ -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="trust-icon"><i class="fas fa-award"></i></div>
+                    <div class="trust-text">
+                        <strong>Premium Quality</strong>
+                        <span>Best Materials Used</span>
+                    </div>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="trust-icon"><i class="fas fa-shipping-fast"></i></div>
+                    <div class="trust-text">
+                        <strong>Fast Delivery</strong>
+                        <span>24-48 Hours Delivery</span>
+                    </div>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trust-icon"><i class="fas fa-tags"></i></div>
+                    <div class="trust-text">
+                        <strong>Best Price</strong>
+                        <span>Affordable Rates</span>
+                    </div>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="trust-icon"><i class="fas fa-headset"></i></div>
+                    <div class="trust-text">
+                        <strong>24/7 Support</strong>
+                        <span>WhatsApp Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         ABOUT SECTION
+    ================================================================ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="about-image-main">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <div class="about-experience-badge">
                         <div class="number">10+</div>
-                        <div class="label">Services</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="number">5+</div>
-                        <div class="label">Years Experience</div>
+                        <span>Years of Experience</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======== OFFER BANNER WITH COUNTDOWN ======== -->
-    <section class="offer-banner">
-        <div class="container">
-            <div class="offer-content">
-                <h3 id="offerBannerTitle">🎉 Visiting Cards Starting at just</h3>
-                <div class="offer-price" id="offerBannerPrice">₹199</div>
-                <div class="countdown">
-                    <div class="countdown-item">
-                        <span class="number" id="countHours">00</span>
-                        <span class="label">Hours</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="number" id="countMins">00</span>
-                        <span class="label">Minutes</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="number" id="countSecs">00</span>
-                        <span class="label">Seconds</span>
-                    </div>
-                </div>
-                <button class="btn btn-highlight btn-sm" onclick="openWhatsApp()">
-                    Grab Offer <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======== SERVICES / PRODUCTS SECTION ======== -->
-    <section class="section" id="services">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2>Our <span class="gradient-text">Services</span></h2>
-                <p>High-quality printing & branding solutions for every need. Order easily via WhatsApp!</p>
-            </div>
-
-            <!-- Search & Filter -->
-            <div class="search-filter animate-on-scroll">
-                <div class="search-box">
-                    <i class="fa-solid fa-search"></i>
-                    <input type="text" id="searchInput" placeholder="Search products...">
-                </div>
-                <div class="filter-btns">
-                    <button class="filter-btn active" data-category="all">All</button>
-                    <button class="filter-btn" data-category="cards">Cards</button>
-                    <button class="filter-btn" data-category="banners">Banners</button>
-                    <button class="filter-btn" data-category="stationery">Stationery</button>
-                    <button class="filter-btn" data-category="events">Events</button>
-                    <button class="filter-btn" data-category="custom">Custom</button>
-                </div>
-            </div>
-
-            <!-- Products Grid (Dynamically rendered from localStorage) -->
-            <!-- ✏️ Products are loaded automatically from script.js or admin panel -->
-            <div class="products-grid" id="productsGrid">
-                <!-- Products are loaded here by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- ======== WHY CHOOSE US ======== -->
-    <section class="section why-section" id="why-us">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2>Why Choose <span class="gradient-text">Arman Graphics?</span></h2>
-                <p>We're committed to delivering the best printing experience in Ambedkar Nagar</p>
-            </div>
-
-            <div class="features-grid">
-                <!-- ✏️ Edit features below -->
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon"><i class="fa-solid fa-medal"></i></div>
-                    <h3>Premium Quality</h3>
-                    <p>We use the latest printing technology and premium materials for outstanding results every time.</p>
-                </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #D6007F, #E6339F)"><i class="fa-solid fa-bolt"></i></div>
-                    <h3>Fast Delivery</h3>
-                    <p>Quick turnaround time — most orders delivered within 24-48 hours. Express delivery available!</p>
-                </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #FFD100, #FFC300)"><i class="fa-solid fa-indian-rupee-sign" style="color: #1A1A1A"></i></div>
-                    <h3>Best Prices</h3>
-                    <p>Competitive pricing without compromising quality. Bulk order discounts available for businesses.</p>
-                </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #1A1A1A, #333)"><i class="fa-solid fa-palette"></i></div>
-                    <h3>Custom Designs</h3>
-                    <p>Free design support! Our team creates custom designs tailored to your brand and requirements.</p>
-                </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #00B5E2, #D6007F)"><i class="fa-solid fa-headset"></i></div>
-                    <h3>24/7 Support</h3>
-                    <p>Reach us anytime on WhatsApp. We're always available to assist you with your printing needs.</p>
-                </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon" style="background: linear-gradient(135deg, #D6007F, #FFD100)"><i class="fa-solid fa-truck-fast"></i></div>
-                    <h3>Home Delivery</h3>
-                    <p>Free delivery within Ambedkar Nagar city. Shipping available across UP and all-India delivery.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======== PORTFOLIO / RECENT WORK ======== -->
-    <section class="section" id="portfolio">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2>Our Recent <span class="gradient-text">Work</span></h2>
-                <p>Browse through some of our recent projects and see the quality we deliver</p>
-            </div>
-
-            <div class="portfolio-grid" id="portfolioGrid">
-                <!-- Portfolio items rendered by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- ======== TESTIMONIALS ======== -->
-    <section class="section testimonials-section" id="testimonials">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2>What Our <span class="gradient-text">Clients Say</span></h2>
-                <p>Don't just take our word for it — hear from our happy customers</p>
-            </div>
-
-            <div class="testimonials-slider animate-on-scroll">
-                <div class="testimonials-track" id="testimonialsTrack">
-                    <!-- Testimonials rendered by JavaScript -->
-                </div>
-                <div class="testimonial-dots" id="testimonialDots">
-                    <!-- Dots rendered by JavaScript -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======== CONTACT SECTION ======== -->
-    <section class="section" id="contact">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2>Get In <span class="gradient-text">Touch</span></h2>
-                <p>Ready to place an order? Fill the form below or contact us directly on WhatsApp!</p>
-            </div>
-
-            <div class="contact-grid">
-                <!-- Contact Info -->
-                <div class="contact-info animate-on-scroll">
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-                        <div>
-                            <h4>Our Location</h4>
-                            <!-- ✏️ Edit address here -->
-                            <p>Main Market, Ambedkar Nagar,<br>Uttar Pradesh, India - 224122</p>
+                <div class="about-content" data-aos="fade-left">
+                    <div class="section-badge"><i class="fas fa-info-circle"></i> About Us</div>
+                    <h2>Ambedkar Nagar ka <span>Sabse Trusted</span> Printing Partner</h2>
+                    <p>Arman Graphics ek professional printing aur branding studio hai jo Ambedkar Nagar, Uttar Pradesh mein located hai. Hum 10+ saalon se quality printing services provide kar rahe hain. Hamara mission hai har customer ko affordable price par premium quality printing dena.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="fas fa-gem"></i></div>
+                            <div>
+                                <h4>Premium Quality</h4>
+                                <p>Best materials & latest technology</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="fas fa-bolt"></i></div>
+                            <div>
+                                <h4>Fast Turnaround</h4>
+                                <p>Quick delivery within 24-48 hrs</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="fas fa-rupee-sign"></i></div>
+                            <div>
+                                <h4>Best Prices</h4>
+                                <p>Most affordable in the region</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="fas fa-palette"></i></div>
+                            <div>
+                                <h4>Custom Design</h4>
+                                <p>Free design with every order</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon" style="background: linear-gradient(135deg, #25D366, #128C7E)"><i class="fa-brands fa-whatsapp"></i></div>
-                        <div>
-                            <h4>WhatsApp / Call</h4>
-                            <!-- ✏️ Edit phone number here -->
-                            <p>+91 63880 25941<br>Available 9 AM - 9 PM</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon" style="background: linear-gradient(135deg, #D6007F, #E6339F)"><i class="fa-solid fa-envelope"></i></div>
-                        <div>
-                            <h4>Email Us</h4>
-                            <!-- ✏️ Edit email here -->
-                            <p>armangraphics.in@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon" style="background: linear-gradient(135deg, #FFD100, #FFC300)"><i class="fa-solid fa-clock" style="color: #1A1A1A"></i></div>
-                        <div>
-                            <h4>Working Hours</h4>
-                            <p>Mon - Sat: 9:00 AM - 9:00 PM<br>Sunday: 10:00 AM - 6:00 PM</p>
-                        </div>
-                    </div>
+                    <a href="#enquiry" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get Started Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <!-- Quick action buttons -->
-                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
-                        <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp()">
-                            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
-                        </button>
-                        <button class="btn btn-primary btn-sm" onclick="callBusiness()">
-                            <i class="fa-solid fa-phone"></i> Call Now
-                        </button>
+    <!-- ================================================================
+         SERVICES SECTION
+         👉 Services JavaScript array se render hoti hain
+         ✏️ Naya service add karne ke liye script.js mein 'servicesData' array edit karo
+    ================================================================ -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge"><i class="fas fa-cogs"></i> Our Services</div>
+                <h2 class="section-title">Hamari <span>Premium Services</span></h2>
+                <p class="section-desc">Har tarah ki printing aur branding ke liye ek hi jagah — Arman Graphics. Quality guarantee ke saath!</p>
+            </div>
+            <!-- Services yahan JS se render hongi -->
+            <div class="services-grid" id="servicesGrid"></div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         PORTFOLIO / GALLERY SECTION
+         👉 Portfolio items bhi JS array se aate hain
+         ✏️ Naya image add karne ke liye script.js mein 'portfolioData' array mein add karo
+    ================================================================ -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge"><i class="fas fa-images"></i> Our Work</div>
+                <h2 class="section-title">Hamara <span>Portfolio</span></h2>
+                <p class="section-desc">Dekho hamare best printing work. Har project mein quality aur creativity dikhti hai!</p>
+            </div>
+            <!-- Filter Buttons -->
+            <div class="portfolio-filters" id="portfolioFilters" data-aos="fade-up"></div>
+            <!-- Gallery Grid -->
+            <div class="portfolio-grid" id="portfolioGrid"></div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- ================================================================
+         TESTIMONIALS SECTION - Customer Reviews
+    ================================================================ -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge"><i class="fas fa-star"></i> Testimonials</div>
+                <h2 class="section-title">Customer <span>Reviews</span></h2>
+                <p class="section-desc">Hamare satisfied customers kya kehte hain hamare baare mein!</p>
+            </div>
+            <div class="testimonials-grid" id="testimonialsGrid"></div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         ORDER / ENQUIRY FORM SECTION
+         👉 Form submit hone par WhatsApp pe message jayega
+    ================================================================ -->
+    <section class="section enquiry" id="enquiry">
+        <div class="container">
+            <div class="enquiry-grid">
+                <div class="enquiry-info" data-aos="fade-right">
+                    <div class="section-badge"><i class="fas fa-paper-plane"></i> Get Quote</div>
+                    <h2>Order Karo Ya <span>Enquiry Karo</span></h2>
+                    <p>Koi bhi printing ya branding requirement ho, humse contact karo. Hum aapko best price aur quality denge. WhatsApp par instant reply!</p>
+                    <div class="enquiry-contact-list">
+                        <div class="enquiry-contact-item">
+                            <div class="enquiry-contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <strong>Call Us</strong>
+                                <span id="displayPhone">+91 63880 25941</span>
+                            </div>
+                        </div>
+                        <div class="enquiry-contact-item">
+                            <div class="enquiry-contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span id="displayWhatsapp">+91 63880 25941</span>
+                            </div>
+                        </div>
+                        <div class="enquiry-contact-item">
+                            <div class="enquiry-contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <strong>Email</strong>
+                                <span>armangraphics.in@gmail.com</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Contact Form (sends to WhatsApp) -->
-                <div class="contact-form animate-on-scroll">
-                    <h3><i class="fa-solid fa-paper-plane"></i> Send Inquiry via WhatsApp</h3>
-                    <form id="contactForm">
+                <div class="enquiry-form-card" data-aos="fade-left">
+                    <form id="enquiryForm">
                         <div class="form-group">
-                            <label for="contactName">Your Name *</label>
-                            <input type="text" id="contactName" placeholder="Enter your name" required>
+                            <label for="userName"><i class="fas fa-user"></i> Your Name</label>
+                            <input type="text" id="userName" placeholder="Apna naam likhein" required>
                         </div>
                         <div class="form-group">
-                            <label for="contactPhone">Phone Number *</label>
-                            <input type="tel" id="contactPhone" placeholder="Enter your phone number" required>
+                            <label for="userPhone"><i class="fas fa-phone"></i> Phone Number</label>
+                            <input type="tel" id="userPhone" placeholder="Apna phone number" required>
                         </div>
                         <div class="form-group">
-                            <label for="contactService">Service Required</label>
-                            <select id="contactService">
-                                <option value="General Inquiry">General Inquiry</option>
-                                <option value="Visiting Cards">Visiting Cards</option>
-                                <option value="Flex & Banners">Flex & Banners</option>
-                                <option value="Bill Books">Bill Books</option>
-                                <option value="Stickers & Labels">Stickers & Labels</option>
-                                <option value="Wedding Cards">Wedding Cards</option>
-                                <option value="Carry Bags">Carry Bags</option>
-                                <option value="ID Cards">ID Cards</option>
-                                <option value="Posters & Brochures">Posters & Brochures</option>
-                                <option value="Custom Keychains">Custom Keychains</option>
-                                <option value="Bottle Stickers">Bottle Stickers</option>
-                                <option value="Other">Other</option>
+                            <label for="userService"><i class="fas fa-cog"></i> Select Service</label>
+                            <select id="userService" required>
+                                <option value="">-- Service Select Karein --</option>
+                                <!-- Options JS se aayengi -->
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="contactMessage">Your Message</label>
-                            <textarea id="contactMessage" placeholder="Describe your requirements, quantity, etc." rows="4"></textarea>
+                            <label for="userMessage"><i class="fas fa-comment-dots"></i> Your Message</label>
+                            <textarea id="userMessage" placeholder="Apni requirements yahan likhein..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
-                            <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+                        <button type="submit" class="form-submit-btn">
+                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
                         </button>
                     </form>
                 </div>
@@ -378,91 +369,164 @@
         </div>
     </section>
 
-    <!-- ======== FOOTER ======== -->
+    <!-- ================================================================
+         FAQ SECTION - Common Questions
+    ================================================================ -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge"><i class="fas fa-question-circle"></i> FAQ</div>
+                <h2 class="section-title">Aksar Puchhe Jaane Wale <span>Sawal</span></h2>
+                <p class="section-desc">Customers ke common questions aur unke answers yahan dekho!</p>
+            </div>
+            <div class="faq-container" id="faqContainer"></div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         BLOG SECTION
+    ================================================================ -->
+    <section class="section blog" id="blog">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge"><i class="fas fa-blog"></i> Blog</div>
+                <h2 class="section-title">Latest <span>Tips & Ideas</span></h2>
+                <p class="section-desc">Printing aur branding se related helpful tips aur ideas!</p>
+            </div>
+            <div class="blog-grid" id="blogGrid"></div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         CONTACT SECTION
+    ================================================================ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge"><i class="fas fa-map-marker-alt"></i> Contact</div>
+                <h2 class="section-title">Humse <span>Sampark Karein</span></h2>
+                <p class="section-desc">Kisi bhi query ke liye humse contact karo. Hum hamesha available hain!</p>
+            </div>
+            <div class="contact-grid" data-aos="fade-up">
+                <div class="contact-card">
+                    <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+                    <h4>Phone Call</h4>
+                    <p><a href="tel:+916388025941" id="contactPhone">+91 63880 25941</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h4>WhatsApp</h4>
+                    <p><a href="#" onclick="openWhatsApp('Hello Arman Graphics!'); return false;" id="contactWhatsapp">+91 63880 25941</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4>Visit Us</h4>
+                    <p>Ambedkar Nagar, Uttar Pradesh, India</p>
+                </div>
+            </div>
+            <!-- Google Maps Embed -->
+            <div class="map-container" data-aos="fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113962.51451944693!2d82.61883535!3d26.40522545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3b0f2f2c4c4f%3A0x71b08f3e42c0bfb6!2sAmbedkar%20Nagar%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Arman Graphics Location - Ambedkar Nagar"></iframe>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links" data-aos="fade-up">
+                <a href="https://www.instagram.com/armangraphics.in" class="social-link" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/armangraphics.in/" class="social-link" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/message/ZSSCCGAVOE7PH1" class="social-link" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-link" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         FOOTER
+    ================================================================ -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <!-- Brand Info -->
-                <div class="footer-brand">
-                    <!-- ✏️ Edit business info -->
-                    <h3>Arman Graphics</h3>
-                    <p>Your trusted partner for premium printing & branding services in Ambedkar Nagar, Uttar Pradesh. Quality printing at affordable prices since 2019.</p>
-                    <div class="social-links">
-                        <a href="https://instagram.com/armangraphics.in" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://facebook.com/armangraphics.in" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="https://youtube.com/@armangraphics_in" class="social-link" target="_blank" rel="noopener" aria-label="YouTube">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="#" class="social-link" onclick="openWhatsApp(); return false;" aria-label="WhatsApp">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
+                <div class="footer-about">
+                    <a href="#" class="logo" style="margin-bottom: 16px;">
+                        <div class="logo-icon">A</div>
+                        <div class="logo-text">
+                            Arman Graphics
+                            <small>Print & Brand Studio</small>
+                        </div>
+                    </a>
+                    <p>Ambedkar Nagar ka most trusted printing & branding studio. Quality printing at best prices with fast delivery. 10+ years of experience.</p>
+                    <div class="social-links" style="justify-content: flex-start; margin-top: 0;">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-
-                <!-- Quick Links -->
-                <div class="footer-col">
+                <div>
                     <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#why-us">Why Choose Us</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#portfolio"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
                     </ul>
                 </div>
-
-                <!-- Services -->
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Visiting Cards</a></li>
-                        <li><a href="#services">Flex & Banners</a></li>
-                        <li><a href="#services">Wedding Cards</a></li>
-                        <li><a href="#services">Bill Books</a></li>
-                        <li><a href="#services">Stickers & Labels</a></li>
+                <div>
+                    <h4>Top Services</h4>
+                    <ul class="footer-links" id="footerServices">
+                        <!-- JS se render hoga -->
                     </ul>
                 </div>
-
-                <!-- Contact -->
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <ul>
-                        <!-- ✏️ Edit contact details -->
-                        <li><a href="#contact"><i class="fa-solid fa-location-dot" style="width:16px;margin-right:5px"></i> Ambedkar Nagar, UP</a></li>
-                        <li><a href="tel:+916388025941"><i class="fa-solid fa-phone" style="width:16px;margin-right:5px"></i> +91 63880 25941</a></li>
-                        <li><a href="mailto:armangraphics.in@gmail.com"><i class="fa-solid fa-envelope" style="width:16px;margin-right:5px"></i> Email Us</a></li>
-                        <li><a href="#" onclick="openWhatsApp(); return false;"><i class="fa-brands fa-whatsapp" style="width:16px;margin-right:5px"></i> WhatsApp</a></li>
+                <div>
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+916388025941"><i class="fas fa-phone"></i> +91 63880 25941</a></li>
+                        <li><a href="mailto:armangraphics.in@gmail.com"><i class="fas fa-envelope"></i> armangraphics.in@gmail.com</a></li>
+                        <li><a href="#contact"><i class="fas fa-map-marker-alt"></i> Ambedkar Nagar, UP</a></li>
+                        <li><a href="#"><i class="fas fa-clock"></i> Mon-Sat: 9AM - 8PM</a></li>
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p>&copy; 2025 <a href="#">Arman Graphics</a>. All Rights Reserved. | Made with ❤️ in Ambedkar Nagar</p>
+                <p>&copy; 2024 <a href="#">Arman Graphics</a>. All Rights Reserved. | Made with ❤️ in Ambedkar Nagar</p>
             </div>
         </div>
     </footer>
 
-    <!-- ======== FLOATING WHATSAPP BUTTON ======== -->
-    <button class="floating-whatsapp" onclick="openWhatsApp()" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </button>
-
-    <!-- ======== BACK TO TOP BUTTON ======== -->
-    <button class="back-to-top" aria-label="Back to top" title="Back to Top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-    <!-- ======== IMAGE LIGHTBOX / POPUP ======== -->
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
-        <img id="lightboxImg" src="" alt="Preview">
+    <!-- ================================================================
+         FLOATING WHATSAPP BUTTON
+         👉 Ye button har page pe dikhega
+    ================================================================ -->
+    <div class="whatsapp-float">
+        <div class="whatsapp-tooltip">Chat on WhatsApp 💬</div>
+        <a href="#" class="whatsapp-float-btn" onclick="openWhatsApp('Hello Arman Graphics! Mujhe aapki printing services ke baare mein jaanna hai.'); return false;" aria-label="WhatsApp Chat">
+            <i class="fab fa-whatsapp"></i>
+        </a>
     </div>
 
-    <!-- ======== MAIN SCRIPT ======== -->
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ================================================================
+         STICKY CTA (Mobile Only)
+    ================================================================ -->
+    <div class="sticky-cta-mobile">
+        <div class="cta-flex">
+            <a href="tel:+916388025941" class="btn btn-primary">
+                <i class="fas fa-phone"></i> Call Now
+            </a>
+            <a href="#" class="btn btn-whatsapp" onclick="openWhatsApp('Hello Arman Graphics!'); return false;">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- 🛠️ Main JavaScript - Saari functionality yahan hai -->
     <script src="script.js"></script>
 </body>
 </html>
