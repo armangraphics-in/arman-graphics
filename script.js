@@ -825,6 +825,11 @@ document.getElementById('enquiryForm').addEventListener('submit', function(e) {
 
 Please share details and pricing. 🙏`;
 
+    gtag('event', 'form_submit', {
+    event_category: 'lead',
+    event_label: 'enquiry_form'
+});
+
     openWhatsApp(whatsappMessage);
 
     // Form reset karo
