@@ -81,56 +81,56 @@ const servicesData = [
         description: 'Custom stickers for products & branding',
         icon: 'fas fa-sticky-note',
         color: 'green',
-        image: 'images/stciker.jpg'
+        image: 'images/sticker.jpg'
     },
     {
         name: 'Carry Bag',
         description: 'Printed carry bags for shops & businesses',
         icon: 'fas fa-shopping-bag',
         color: 'purple',
-        image: 'images/Carry-Bag.jpg'
+        image: 'images/carry-bag.jpg'
     },
     {
         name: 'Poster Printing',
         description: 'Vibrant posters for events & promotions',
         icon: 'fas fa-scroll',
         color: 'orange',
-        image: 'images/Pamphlet.jpg'
+        image: 'images/pamplate.jpg'
     },
     {
         name: 'Brochure',
         description: 'Professional brochures & pamphlets',
         icon: 'fas fa-book-open',
         color: 'cyan',
-        image: 'images/Menu.jpg'
+        image: 'images/menu.jpg'
     },
     {
         name: 'ID Card',
         description: 'Employee & student ID cards with laminates',
         icon: 'fas fa-id-badge',
         color: 'blue',
-        image: 'images/ID-Card.jpg'
+        image: 'images/id-card.jpg'
     },
     {
         name: 'LED 3D Letter',
         description: 'Premium 3D letter signage with strong visibility',
         icon: 'fas fa-tshirt',
         color: 'red',
-        image: 'images/3D-Letter.jpg'
+        image: 'images/led-letter.jpg'
     },
     {
         name: 'Roll-up Banner',
         description: 'Premium standee banners for promotions and events',
         icon: 'fas fa-mug-hot',
         color: 'yellow',
-        image: 'images/Standee.jpg'
+        image: 'images/standee.jpg'
     },
     {
         name: 'Invition ',
         description: 'Best inauguration card printing in Ambedkar Nagar',
         icon: 'fas fa-palette',
         color: 'purple',
-        image: 'images/invition-Card.jpg'
+        image: 'images/invition-card.jpg'
     }
 ];
 
