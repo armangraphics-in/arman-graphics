@@ -74,7 +74,7 @@ const servicesData = [
         description: 'Beautiful wedding invitation cards & designs',
         icon: 'fas fa-heart',
         color: 'magenta',
-        image: 'images/wedding-card.jpg'
+        image: 'https://picsum.photos/300'
     },
     {
         name: 'Sticker Printing',
