@@ -234,8 +234,7 @@ ul { list-style: none; }
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
-    z-index: 1001;
+    gap: 8px;
 }
 
 .logo-img {
@@ -1875,6 +1874,23 @@ ul { list-style: none; }
     }
     .portfolio-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-text {
+        display: none; /* 👈 text hide */
+    }
+
+    .logo img {
+        height: 40px; /* 👈 thoda chhota */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 120px;
+        object-fit: contain;
     }
 }
 
