@@ -238,6 +238,12 @@ ul { list-style: none; }
     z-index: 1001;
 }
 
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
 .logo-icon {
     width: 45px;
     height: 45px;
