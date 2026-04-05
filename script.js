@@ -511,10 +511,12 @@ function closeLightbox() {
     }
 }
 
-// Lightbox close on background click
-document.getElementById('lightbox').addEventListener('click', function(e) {
-    if (e.target === this) closeLightbox();
-});
+const lightboxEl = document.getElementById('lightbox');
+if (lightboxEl) {
+    lightboxEl.addEventListener('click', function(e) {
+        if (e.target === this) closeLightbox();
+    });
+}
 
 // ESC key se lightbox band karo
 document.addEventListener('keydown', function(e) {
